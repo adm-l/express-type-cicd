@@ -16,6 +16,16 @@ app.get("/", (req: Request, res: Response) => {
 app.get("/health", (req: Request, res: Response) => {
   res.send("up and running!");
 });
+app.get("/users", (req: Request, res: Response) => {
+  let arr = [{
+    name:"bharat",
+    age:12
+  },{
+    name:"bharat",
+    age:12
+  }]
+  res.status(200).json(arr);
+});
 app.listen(PORT,"0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 });
