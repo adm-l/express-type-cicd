@@ -21,8 +21,8 @@ app.get("/users", (req: Request, res: Response) => {
     name:"bharat",
     age:12
   },{
-    name:"bharat",
-    age:12
+    name:"bharat1",
+    age:121
   }]
   res.status(200).json(arr);
 });
